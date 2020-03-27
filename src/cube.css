@@ -1,0 +1,78 @@
+/*清除浮动*/
+.clearfix:after {
+  visibility: hidden;
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /*IE6、IE7*/
+}
+
+/* cubebox tmpl */
+.cubebox-tmpl-wrap {
+  width: 100%;
+  height: 100%;
+}
+.cubebox-tmpl-wrap .loading {
+  width: 100%;
+  height: 100%;
+  background: url(//hao1.qhimg.com/t01c12b35e51e1d44ea.png) center top no-repeat;
+  position: relative;
+  z-index: 2;
+}
+
+/* carousel box */
+.carousel-box {
+  width: 368px;
+  height: 100px;
+  overflow: hidden;
+}
+
+/* infor box */
+.infor-box {
+  margin-top: 14px;
+  border-top: 1px dotted #ddd;
+}
+.infor-box .inner {
+  margin-top: -10px;
+}
+.infor-box .tit {
+  display: inline-block;
+  color: #999;
+  margin-bottom: 6px;
+  padding-right: 2px;
+  background: #fff;
+  font-weight: normal;
+  font-size: 12px;
+}
+.infor-box .list a {
+  display: block;
+  float: left;
+  padding-left: 31px;
+  position: relative;
+  height: 26px;
+  line-height: 26px;
+  width: 91px;
+  margin-bottom: 8px;
+}
+.infor-box .list img {
+  display: block;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.infor-box .list span {
+  display: block;
+  width: 90px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media cube and (expand) {
+}
